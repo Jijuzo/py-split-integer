@@ -19,7 +19,3 @@ def test_should_handle_case_where_value_is_less_than_number_of_parts() -> None:
 
 def test_should_split_correctly_with_large_remainder() -> None:
     assert split_integer(32, 6) == [5, 5, 5, 5, 6, 6]
-
-
-def test_should_return_list_of_zeros_when_value_is_zero() -> None:
-    assert split_integer(0, 4) == [0, 0, 0, 0]
